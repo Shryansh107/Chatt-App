@@ -6,7 +6,7 @@ import DarkModeToggle from './DarkModeToggle.jsx';
 const url = "https://chat-backend-p0z7.onrender.com"
 
 const deletbttn = (chatId) => {
-  fetch(url +`/chats/${chatId}`, {
+  fetch(`https://chat-backend-p0z7.onrender.com/chats/${chatId}`, {
     method: "DELETE",
   })
     .then((response) => {
@@ -25,7 +25,7 @@ const onpress = async () => {
   const title = document.getElementById('title').value;
   const description = document.getElementById('description').value;
 
-  const response = await fetch(url +'/chats', {
+  const response = await fetch('https://chat-backend-p0z7.onrender.com/chats', {
     method: "POST",
     body: JSON.stringify({
       title: title,
@@ -49,7 +49,7 @@ function usechats(){
   const [chats,setchats]= React.useState([])
 
   React.useEffect(()=> {
-    fetch(url +"/chats",{
+    fetch("https://chat-backend-p0z7.onrender.com/chats",{
       method:"GET"
     }).then((response)=>{
       response.json().then((data) =>{
@@ -58,7 +58,7 @@ function usechats(){
       })})
 
       setInterval(()=>{
-        fetch(url +"/chats",{
+        fetch("https://chat-backend-p0z7.onrender.com/chats",{
           method:"GET"
         }).then((response)=>{
           response.json().then((data) =>{
