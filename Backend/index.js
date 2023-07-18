@@ -7,38 +7,38 @@ app.use(cors());
 app.use(bodyParser.json());
 
 
-let todos = [];
+let chats = [];
 
 
-app.get('/todos', (req, res) => {
-  res.json(todos);
+app.get('/chats', (req, res) => {
+  res.json(chats);
 });
 
-app.get('/todos/:id', (req, res) => {
-  const todo = todos.find(t => t.id === parseInt(req.params.id));
-  if (!todo) {
+app.get('/chats/:id', (req, res) => {
+  const chat = chats.find(t => t.id === parseInt(req.params.id));
+  if (!chat) {
     res.status(404).send();
   } else {
-    res.json(todo);
+    res.json(chat);
   }
 });
 
-app.post('/todos', (req, res) => {
-  const newTodo = {
+app.post('/chats', (req, res) => {
+  const newchat = {
     id: Math.floor(Math.random() * 1000000), 
     title: req.body.title,
     description: req.body.description
   };
-  todos.push(newTodo);
-  res.status(201).json(newTodo);
+  chats.push(newchat);
+  res.status(201).json(newchat);
 });
 
-app.delete('/todos/:id', (req, res) => {
-  const todoIndex = todos.findIndex(t => t.id === parseInt(req.params.id));
-  if (todoIndex === -1) {
+app.delete('/chats/:id', (req, res) => {
+  const chatIndex = chats.findIndex(t => t.id === parseInt(req.params.id));
+  if (chatIndex === -1) {
     res.status(404).send();
   } else {
-    todos.splice(todoIndex, 1);
+    chats.splice(chatIndex, 1);
     res.status(200).send();
   }
 });
