@@ -1,1 +1,1 @@
-# TodoAppMern
+# ChattAppMern
