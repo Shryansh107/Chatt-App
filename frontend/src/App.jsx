@@ -109,9 +109,9 @@ function App() {
       })}
           </div>
 
-<div className=' flex flex-nowrap flex-row justify-evenly items-center bg-[#f3f2f2] dark:bg-[#2a2a2a] text-[#000] dark:text-[#ffffff]  p-1  border-solid border-2 border-[#ccc] dark:border-[#4746467c] rounded-xl h-fit sm:w-full md:w-fit '>
+<div className=' flex flex-nowrap flex-row justify-evenly items-center bg-[#f3f2f2] dark:bg-[#2a2a2a] text-[#000] dark:text-[#ffffff]  p-1  border-solid border-2 border-[#ccc] dark:border-[#4746467c] rounded-xl h-fit w-full md:w-fit '>
 
-<div className='grid sm:grid-cols-1 md:grid-cols-2 '>
+<div className='grid sm:grid-cols-1 md:grid-cols-2 gap-1 w-full'>
   <input id="title" className=" bg-[#fff] dark:bg-[#2a2a2a] text-[#000] dark:text-[#FFFFFF] border-solid border-2 border-[#ccc] dark:border-[#4746467c] p-2 rounded-xl mr-1 w-full " type="text" placeholder='User-name'/>
   <input id="description" className=" bg-[#fff] dark:bg-[#2a2a2a] text-[#000] dark:text-[#FFFFFF] border-solid border-2 border-[#ccc] dark:border-[#4746467c] p-2 rounded-xl mr-1 w-full md:grid-cols-2" type="text" placeholder='Message'/>
 </div>
