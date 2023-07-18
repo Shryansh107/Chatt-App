@@ -88,7 +88,7 @@ function App() {
       </nav>
 
 
-          <div className='   gap-2 max-w-full overflow-hidden bg-[#f3f2f2] dark:bg-[#222222]  w-[90%] h-3/4 p-2  border-solid border-2 border-[#ccc] dark:border-[#4746467c] rounded-xl  max-h-[544] overflow-y-scroll'>
+          <div className='   gap-2 max-w-full overflow-hidden bg-[#f3f2f2] dark:bg-[#222222]  w-[90%] h-[65%] p-2  border-solid border-2 border-[#ccc] dark:border-[#4746467c] rounded-xl  max-h-[544] overflow-y-scroll'>
             {/* note items here */}
           
 
