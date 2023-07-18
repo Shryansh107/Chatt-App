@@ -3,7 +3,7 @@ import React, { useEffect } from 'react';
 import DarkModeToggle from './DarkModeToggle.jsx';
 
 
-const url = "https://chattfrontend.onrender.com"
+const url = "https://chat-backend-p0z7.onrender.com"
 
 const deletbttn = (chatId) => {
   fetch(url +`/chats/${chatId}`, {
